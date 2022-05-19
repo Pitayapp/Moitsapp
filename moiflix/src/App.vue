@@ -1,31 +1,43 @@
 <script setup>
-function enviaInfo(valor1, valor2, valor3) {
-  let xhr = new XMLHttpRequest();
+// function enviaInfo(valor1, valor2, valor3) {
+//   let xhr = new XMLHttpRequest();
 
-  xhr.open(
-    "POST",
-    "http://localhost/DWES/VT11/APIREST/webService/controller/pokemon.php?op=Insert",
-    true
-  ); // Hacemos la petición por POST
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//   xhr.open(
+//     "POST",
+//     "http://localhost/DWES/VT11/APIREST/webService/controller/pokemon.php?op=Insert",
+//     true
+//   ); // Hacemos la petición por POST
+//   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-  xhr.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      alert("Insertado");
-    } else {
-      console.log("Cargando EnviaUno");
-    }
-  };
-  xhr.send(
-    '{"nombre" : "' +
-      valor1 +
-      '", "numero" : ' +
-      valor2 +
-      ', "tipo" : "' +
-      valor3 +
-      '"}'
-  );
-}
+//   xhr.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       alert("Insertado");
+//     } else {
+//       console.log("Cargando EnviaUno");
+//     }
+//   };
+//   xhr.send(
+//     '{"nombre" : "' +
+//       valor1 +
+//       '", "numero" : ' +
+//       valor2 +
+//       ', "tipo" : "' +
+//       valor3 +
+//       '"}'
+//   );
+// }
+
+// function printMessage(received) {
+//   out = "<div>";
+
+//   for (var i = 0; i < recibido.length; i++) {
+//     salida += "<p>" + recibido[i]["nick"] + "</p>\n";
+//     salida += "<p>" + recibido[i]["date"] + "</p>\n";
+//   }
+
+//   salida += "</ul>";
+//   listaConUno.innerHTML = salida;
+// }
 </script>
 
 <template>
